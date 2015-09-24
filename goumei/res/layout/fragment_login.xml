@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_titlebar_go_back" />
+
+    <RelativeLayout
+        android:id="@+id/rl_phoneNum"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_below="@id/title" >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:text="+86"
+            android:textColor="#210303"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/tv"
+            android:background="@drawable/divider_vertical_me" />
+
+        <EditText
+            android:id="@+id/tel_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/iv_1"
+            android:background="@color/gray"
+            android:hint="请输入手机号"
+            android:textColor="#210303"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="4dp"
+            android:background="#ada2a1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:id="@+id/rl_pwd"
+        android:layout_below="@id/rl_phoneNum" >
+
+        <EditText
+            android:id="@+id/pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray"
+            android:layout_centerVertical="true"
+            android:hint="请填写密码,6-16位字符"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/view_2"
+           android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="4dp"
+            android:background="#ada2a1" />
+    </RelativeLayout>
+    <TextView
+            android:id="@+id/forget_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_pwd"
+            android:text="忘记密码?"
+            android:textColor="#fe4871"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="13dp"
+            android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fe4871"
+        android:gravity="center"
+        android:text="登陆"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

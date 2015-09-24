@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_eae8e6">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_status_bar_category"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/findfriend_last"
+            style="@style/MeItemTextView1"
+            android:drawableLeft="@drawable/status_left_arrow"
+            android:text="返回" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="找好友"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            style="@style/MeItemTextView1"
+            android:drawableLeft="@drawable/status_left_arrow"
+            android:text="返回"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/search_backgourd">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/search_icon"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:id="@+id/findfriend"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:singleLine="true"
+            android:hint="搜索微视购用户 （昵称/ID）"
+            android:textSize="14sp"/>
+        <ImageView
+            android:id="@+id/find_deleteIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/search_delete"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="invisible"/>
+    </LinearLayout>
+    <ListView 
+        android:id="@+id/friendList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"/>
+</LinearLayout>

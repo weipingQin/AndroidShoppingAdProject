@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_eae8e6" >
+
+    <RelativeLayout
+        android:id="@+id/detailcommentTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_status_bar_category"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/detailsLast"
+            style="@style/MeItemTextView1"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/status_left_arrow"
+            android:text="@string/string_return" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/string_details"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/detailsShare"
+            style="@style/MeItemTextView1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/icon_share"
+            android:text="@string/string_share" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_content"
+        style="@style/MyListView"
+        android:layout_above="@+id/bottomLL"
+        android:layout_below="@id/detailcommentTitle"
+        android:divider="@null" />
+
+    <LinearLayout
+        android:id="@+id/bottomLL"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/chat_layout_emote"
+        android:background="@color/color_210403"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/ivExpression"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/icon_expression" />
+
+        <com.www.goumei.emoji.EmoticonsEditText
+            android:id="@+id/InputContent"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_commentframe"
+            android:hint="写评论"
+            android:paddingLeft="10dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/tvSendout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_opt"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/chat_layout_emote"
+        android:background="@color/color_210403"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_comment_opt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tvComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/icon_msg_default"
+                android:gravity="center"
+                android:text="@string/string_comment"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        
+
+        <RelativeLayout
+            android:id="@+id/rl_love_opt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tvLove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/icon_loves_no"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="喜欢"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+       
+
+        <RelativeLayout
+            android:id="@+id/rl_shopping_opt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tvShoping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/icon_shopping"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="@string/string_shoping"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/chat_layout_emote"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/msg_editor_backgroud" >
+
+        <com.www.goumei.emoji.EmoteInputView
+            android:id="@+id/chat_eiv_inputview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>

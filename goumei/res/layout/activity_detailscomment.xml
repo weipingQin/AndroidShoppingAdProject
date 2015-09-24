@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_eae8e6">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_status_bar_category"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/detailsLast"
+            style="@style/MeItemTextView1"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/status_left_arrow"
+            android:text="@string/string_return" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/string_details"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/detailsShare"
+            style="@style/MeItemTextView1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/icon_share"
+            android:text="@string/string_share" />
+    </RelativeLayout>
+	
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/white">
+        <com.www.goumei.views.CircleImageView
+            android:id="@+id/detailscommentIcon"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/test"
+            android:layout_centerVertical="true"/>
+        
+        <ImageView
+            android:id="@+id/detailscommentTypr"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/icon_verified"
+            android:layout_marginTop="33dp"
+            android:layout_marginLeft="28dp"/>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/detailscommentTypr"
+            android:layout_marginLeft="9dp"
+            android:paddingTop="10dp">
+            <TextView 
+                android:id="@+id/shopingName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/color_210303"
+                android:text="初棉旗舰店"/>
+            
+            <TextView 
+                android:id="@+id/commentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/color_a8a8a8"
+                android:text="04-16 8:00"/>
+            
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <ImageView 
+        android:id="@+id/shopingImg"
+        android:layout_width="fill_parent"
+        android:layout_height="320dp"
+        android:src="@drawable/test"
+        android:scaleType="centerCrop"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="78dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView 
+                android:id="@+id/saleTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_ff6600"
+                android:text="#女神季#"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+            <TextView 
+                android:id="@+id/saleContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/color_210303"
+                android:text="@string/string_shoping_text"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

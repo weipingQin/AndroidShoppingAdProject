@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_eae8e6">
+
+    <LinearLayout
+        android:id="@+id/top_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/backgourd_orange"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:id="@+id/personalLast"
+                style="@style/MeItemTextView1"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/status_left_arrow"
+                android:text="返回" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="个人主页"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <com.www.goumei.views.CircleImageView
+                android:id="@+id/homeIcon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/test" />
+
+            <ImageView
+                android:id="@+id/verifiedIcon"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/icon_verified" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/homeIcon"
+                android:orientation="vertical"
+                android:paddingLeft="10dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/homeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/homeSex"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/icon_female" />
+
+                    <ImageView
+                        android:id="@+id/homeType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/icon_me_verified" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/homeSignature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ta很懒！什么都没有留下."
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_display_favrioute_default" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="已被喜欢"
+                        android:textColor="@color/white"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="次"
+                        android:textColor="@color/white"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/userDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/home_right_max" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp">
+            <ImageView
+                android:id="@+id/isFollow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/isfollow1"
+				android:layout_centerInParent="true"
+				android:visibility="invisible"
+                android:layout_marginLeft="70dp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/works"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0\n作品"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="30dp"
+                android:background="@drawable/line_vertical" />
+
+            <TextView
+                android:id="@+id/follow"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0\n关注"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="30dp"
+                android:background="@drawable/line_vertical" />
+
+            <TextView
+                android:id="@+id/fans"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0\n粉丝"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+   <RelativeLayout 
+       android:id="@+id/rl1"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent">
+        <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:id="@+id/worksGV"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" 
+        android:visibility="visible"/>
+    </RelativeLayout>
+    <RelativeLayout 
+       android:id="@+id/rl2"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent">
+    <com.handmark.pulltorefresh.library.PullToRefreshListView 
+        android:id="@+id/followLv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:visibility="visible"
+        android:divider="@null"/>
+    </RelativeLayout>
+    <RelativeLayout 
+       android:id="@+id/rl3"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent">
+    <com.handmark.pulltorefresh.library.PullToRefreshListView 
+        android:id="@+id/fansLv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:visibility="visible"
+        android:divider="@null"/>
+    </RelativeLayout>
+   
+
+</LinearLayout>

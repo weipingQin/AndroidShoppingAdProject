@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_selectlogingactivity"
+        android:padding="20dp" >
+
+        <ImageView
+            android:id="@+id/iv_wsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/icon_login_wsg" />
+
+        <TextView
+            android:id="@+id/tv_telelogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_wsg"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/icon_login_telelogin" />
+
+        <ImageView
+            android:id="@+id/iv_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_telelogin"
+            android:background="@drawable/icon_login_otherlogin" />
+
+        <TextView
+            android:id="@+id/tv_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_other"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:drawableTop="@drawable/icon_login_weixin"
+            android:gravity="center_horizontal"
+            android:text="微信"
+            android:textColor="#88000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_other"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:drawableTop="@drawable/icon_login_qq"
+            android:gravity="center_horizontal"
+            android:text="QQ"
+            android:textColor="#88000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_weibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/iv_other"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:drawableTop="@drawable/icon_login_weibo"
+            android:gravity="center_horizontal"
+            android:text="微博"
+            android:textColor="#88000000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_login_close" />
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <LinearLayout
+            android:id="@+id/rg_root_actionlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dilanbeijing"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                 >
+
+                <RadioButton
+                    android:id="@+id/rb_mainhome"
+                    style="@style/mainactivity_tab_bottom"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/net_mainhome_icon_selector" />
+                
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/rb_attention"
+                    style="@style/mainactivity_tab_bottom"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/net_attention_icon_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <RadioButton
+                    android:id="@+id/rb_video"
+                    style="@style/mainactivity_tab_bottom"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/net_video_icon_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/rb_message"
+                    style="@style/mainactivity_tab_bottom"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/net_message_icon_selector" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/rb_my"
+                    style="@style/mainactivity_tab_bottom"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/net_mainmy_icon_selector" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</TabHost>

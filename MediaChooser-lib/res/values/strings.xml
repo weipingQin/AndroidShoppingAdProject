@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MediaChooser</string>
+    <string name="image"> Image </string>
+    <string name="video"> 选择视频 </string>
+    <string name="images_tab"> 图片 </string>
+    <string name="videos_tab"> 视频 </string>
+    <string name="max_limit_reach_error"> 最大限制10个文件. </string>
+    <string name="max_limit_file"> Max limit </string>
+    <string name="please_wait_text">请稍后~</string>
+    <string name="refreshing"> Refreshing</string>
+    <string name="file_size_exeeded"> 文件大小最大限制为:</string>
+    <string name="selected_file_size">  选取视频的大小是: </string>
+    <string name="mb"> MB</string>
+    <string name="plaese_select_file"> 请选择一个视频文件</string>
+    <string name="file"> file. </string>
+    <string name="files"> files. </string>
+    <string name="no_media_file_available"> 没有合适的文件类型</string>
+
+</resources>

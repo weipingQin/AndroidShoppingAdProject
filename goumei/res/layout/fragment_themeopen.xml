@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_eae8e6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_status_bar_category"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/themeopenLast"
+            style="@style/MeItemTextView1"
+            android:drawableLeft="@drawable/status_left_arrow"
+            android:text="@string/string_return" />
+
+        <TextView
+            android:id="@+id/themeopenTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/share_icon" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ThemeCover"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp" >
+
+        <RadioGroup
+            android:id="@+id/themeopenVg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/themeopenNew"
+                style="@style/radioButtonStyle"
+                android:checked="true"
+                android:text="@string/string_new" />
+
+            <RadioButton
+                android:id="@+id/themeopenHot"
+                style="@style/radioButtonStyle"
+                android:text="@string/string_hot" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/themeopemVg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>

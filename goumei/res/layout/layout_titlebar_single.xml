@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_status_bar_category"
+    android:layout_height="48dp" >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:text="我的关注"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

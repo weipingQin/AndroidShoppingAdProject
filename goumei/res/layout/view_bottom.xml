@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:background="@color/dark_red"
+    android:orientation="horizontal" >
+
+    <RadioGroup
+        android:id="@+id/rb_group"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RadioButton
+            android:id="@+id/rb_attention"
+            style="@style/BottomIndicatorItem.RadioButton"
+            android:drawableTop="@drawable/icon_bottom_indicator_attention"
+            android:text="关注" />
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/BottomIndicatorItem.RadioButton"
+            android:drawableTop="@drawable/icon_bottom_indicator_home"
+            android:text="首页" />
+
+        <ImageButton
+            android:id="@+id/ib_video"
+            style="@style/BottomIndicatorItem.RadioButton"
+            android:background="@drawable/icon_bottom_video" />
+
+        <RadioButton
+            android:id="@+id/rb_msg"
+            style="@style/BottomIndicatorItem.RadioButton"
+            android:drawableTop="@drawable/icon_bottom_indicator_msg"
+            android:text="信息" />
+
+        <RadioButton
+            android:id="@+id/rb_me"
+            style="@style/BottomIndicatorItem.RadioButton"
+            android:drawableTop="@drawable/icon_bottom_indicator_me"
+            android:text="我" />
+    </RadioGroup>
+
+</LinearLayout>

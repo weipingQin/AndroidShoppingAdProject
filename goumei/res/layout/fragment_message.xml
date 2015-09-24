@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_eae8e6"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_titlebar_single" />
+
+    <RelativeLayout
+        android:id="@+id/rl_fans"
+        style="@style/MessageTitleItem" >
+
+        <TextView
+            style="@style/MessageTitleTextView"
+            android:drawableLeft="@drawable/icon_message_fans"
+            android:text="粉丝" />
+
+        <ImageView
+            android:id="@+id/iv_fans_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_message_arrow_right" />
+
+        <TextView
+            android:id="@+id/fansCount"
+            style="@style/MessageTitleTextView.Count"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@id/iv_fans_arrow"
+            android:background="@drawable/bg_message_fans_count"
+            android:text="0" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/divider_message_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_comments"
+        style="@style/MessageTitleItem" >
+
+        <TextView
+            style="@style/MessageTitleTextView"
+            android:drawableLeft="@drawable/icon_message_comments"
+            android:text="评论" />
+
+        <ImageView
+            android:id="@+id/iv_comments_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_message_arrow_right" />
+
+        <TextView
+            android:id="@+id/commentsCount"
+            style="@style/MessageTitleTextView.Count"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@id/iv_comments_arrow"
+            android:background="@drawable/bg_message_comments_count"
+            android:text="0" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/divider_message_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_favorite"
+        style="@style/MessageTitleItem" >
+
+        <TextView
+            style="@style/MessageTitleTextView"
+            android:drawableLeft="@drawable/icon_message_favorites"
+            android:text="喜欢" />
+
+        <ImageView
+            android:id="@+id/iv_fav_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_message_arrow_right" />
+
+        <TextView
+            android:id="@+id/favoritesCount"
+            style="@style/MessageTitleTextView.Count"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@id/iv_fav_arrow"
+            android:background="@drawable/bg_message_favorite_count"
+            android:text="0" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/divider_gray"
+        android:paddingLeft="10dp"
+        android:text="推送信息"
+        android:textColor="@android:color/white"
+        android:textSize="10sp" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:cacheColorHint="@android:color/white"
+        android:fadingEdge="none"
+        android:scrollbars="none" />
+
+</LinearLayout>

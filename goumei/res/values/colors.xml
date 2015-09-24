@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#fff</color>
+    <color name="bg_titlebar">#F5642B</color>
+    <color name="orange">#ff6600</color>
+    <color name="gray">#eae7e5</color>
+    <color name="dark_red">#210303</color>
+    <color name="divider_gray">#725E5D</color>
+    <!-- 柠檬黄 -->
+    <color name="lemonyellow">#D5F800</color>
+    <color name="color_eae8e6">#eae8e6</color>
+    <color name="color_210403">#210403</color>
+    <color name="color_54413e">#54413e</color>
+    <color name="color_725f5c">#725f5c</color>
+    <color name="color_9e9855">#9e9855</color>
+    <color name="color_685f5f">#685f5f</color>
+    <color name="color_ef5f00">#ef5f00</color>
+    <color name="color_877c78">#877c78</color>
+    <color name="color_dcd7d4">#dcd7d4</color>
+    <color name="color_a8a8a8">#a8a8a8</color>
+    <color name="color_c7c1c0">#c7c1c0</color>
+    <color name="color_cfc9c6">#cfc9c6</color>
+    <color name="color_ff6600">#ff6600</color>
+    <color name="color_black">#000000</color>
+    <color name="color_705e5e">#705e5e</color>
+    <color name="color_dialog">#eee8e4</color>
+    <color name="color_dialog_tv">#000000</color>
+    <color name="title_background_color">#fcb840</color>
+    <color name="camera_bg">#2c2c2c</color>
+    <color name="camera_progress">#2980B9</color>
+    <color name="camera_progress_split">#005084</color>
+    <color name="camera_progress_three">#24ff00</color>
+    <color name="camera_progress_overflow">#1b5d89</color>
+    <color name="camera_theme_selected_bgcolor">#2980B9</color>
+    <color name="camera_bottom_press_bg">#1b1c1f</color>
+    <color name="camera_progress_delete">#f68b2b</color>
+    <color name="color_636b70">#636b70</color>
+    <color name="color_210303">#210303</color>
+    <color name="color_ada2a1">#ada2a1</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_gray2">#ffC3C3C3</color>
+    <color name="yellow">#ffFF33ff</color>
+    <color name="green">#0ff0ff</color>
+    <!-- emoji -->
+    <color name="msg_emotebar_backgroud">#ff73797d</color>
+    <color name="msg_emotebar_item_press">#ff3b3e40</color>
+    <color name="msg_emotebar_item_selected">#ffececec</color>
+    <color name="msg_emote_divider">#ffa1a1a1</color>
+    <color name="light_notes_color">#ff999999</color>
+    <color name="msg_editor_backgroud">#ffececec</color>
+    <color name="darkgray">#404040ff</color>
+    <color name="black">#000</color>
+    <color name="red">#FF0000</color>
+    <color name="lightgray">#c0c0c0ff</color>
+    <color name="blue">#ff0f81d9</color>
+    <color name="magenta">#ff6699ff</color>
+    <color name="cyan">#66ffffff</color>
+    <color name="transparent_black">#ff000000</color>
+    <color name="background_dark">#f0f0f0</color>
+    <color name="translucent_background_80">#CC000000</color>
+    <color name="translucent_background_50">#7f000000</color>
+    <color name="transparent_black_40">#66000000</color>
+    <color name="transparent_black_85">#DA000000</color>
+    <color name="transparent_black_30">#4D000000</color>
+    <color name="light_gray">#99a4b7</color>
+    <color name="light_blue">#87d0f2</color>
+
+</resources>

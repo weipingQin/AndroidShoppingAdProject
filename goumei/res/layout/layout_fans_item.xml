@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+	    android:padding="10dp">
+	    
+	    <com.www.goumei.views.CircleImageView
+	        android:id="@+id/fansIcon" 
+	        android:layout_width="35dp"
+	        android:layout_height="35dp"
+	        android:src="@drawable/test"
+	        android:layout_centerVertical="true"/>
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center_vertical"
+	        android:layout_toRightOf="@+id/fansIcon"
+	        android:layout_toLeftOf="@+id/isfollow">
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content">
+	             <TextView 
+	        android:id="@+id/fansName"
+	        android:layout_marginLeft="5dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="别来无恙"
+	        android:textColor="@color/color_210303"
+	        android:textSize="18sp"/>
+	         <TextView
+	        android:id="@+id/fansSex"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="12sp"
+	        android:layout_marginLeft="5dp"/>
+	        </LinearLayout>
+	    <TextView 
+	        android:id="@+id/fansId"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:textColor="@color/color_705e5e"
+	        android:textSize="14sp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_below="@+id/fansName"
+	        android:layout_toRightOf="@id/fansIcon"/>
+	    
+	    </LinearLayout>
+	   
+	    
+	    <ImageView
+	        android:id="@+id/isfollow"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/isfollow3"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:layout_centerVertical="true"/>
+	</RelativeLayout>
+	
+	<ImageView
+	    android:id="@+id/fans_item_line"
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="@color/color_dcd7d4"
+	    android:layout_marginLeft="6dp"
+	    android:layout_marginRight="6dp"/>
+</LinearLayout>

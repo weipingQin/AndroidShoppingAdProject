@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center"
+    android:background="@drawable/bg_dialog"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+   
+    <Button 
+	        android:background="@null"
+	        android:id="@+id/nan"
+	        android:textColor="@color/color_dialog_tv"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="男"/>
+     <ImageView
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="@color/color_dcd7d4"
+	    android:layout_marginLeft="6dp"
+	    android:layout_marginRight="6dp"/>
+    <Button 
+	        android:background="@null"
+	        android:id="@+id/nv"
+	        android:textColor="@color/color_dialog_tv"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="女"/>
+     <ImageView
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="@color/color_dcd7d4"
+	    android:layout_marginLeft="6dp"
+	    android:layout_marginRight="6dp"/>
+	    <Button 
+	        android:background="@null"
+	        android:id="@+id/cancle"
+	        android:textColor="@color/color_dialog_tv"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="取消"
+	        />
+	   
+	    
+	
+</LinearLayout>

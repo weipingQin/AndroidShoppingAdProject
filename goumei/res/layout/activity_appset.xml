@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/color_eae8e6">
+    
+	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_status_bar_category"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/appset_last"
+            style="@style/MeItemTextView1"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/status_left_arrow"
+            android:text="返回" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+    
+	<LinearLayout
+	    android:id="@+id/layout_myuser"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="15dp"
+	    android:paddingRight="10dp">
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="我的账号"
+	        android:textColor="@color/color_54413e"
+	        android:textSize="16sp"/>
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/icon_message_arrow_right"/>
+	</LinearLayout>
+	
+	<View 
+	    android:layout_width="fill_parent"
+	    android:layout_height="15dp"
+	    android:background="@color/color_725f5c"/>
+	
+	<LinearLayout
+	    android:id="@+id/layout_general"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="15dp"
+	    android:paddingRight="10dp">
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="通用"
+	        android:textColor="@color/color_54413e"
+	        android:textSize="16sp"/>
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/icon_message_arrow_right"/>
+	</LinearLayout>
+	
+	<View 
+	    android:layout_width="wrap_content"
+	    android:layout_height="1dp"
+	    android:background="@drawable/divider_message_title"
+	    android:layout_marginLeft="8dp"
+	    android:layout_marginRight="8dp"/>
+	
+	<LinearLayout
+	    android:id="@+id/layout_feedback"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="15dp"
+	    android:paddingRight="10dp">
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="意见反馈"
+	        android:textColor="@color/color_54413e"
+	        android:textSize="16sp"/>
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/icon_message_arrow_right"/>
+	</LinearLayout>
+	
+	<View 
+	    android:layout_width="fill_parent"
+	    android:layout_height="15dp"
+	    android:background="@color/color_725f5c"/>
+	
+	<LinearLayout
+	    android:id="@+id/layout_about"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="15dp"
+	    android:paddingRight="10dp">
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="关于微视购"
+	        android:textColor="@color/color_54413e"
+	        android:textSize="16sp"/>
+	    <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/icon_message_arrow_right"/>
+	</LinearLayout>
+	
+	<View 
+	    android:layout_width="wrap_content"
+	    android:layout_height="1dp"
+	    android:background="@drawable/divider_message_title"
+	    android:layout_marginLeft="8dp"
+	    android:layout_marginRight="8dp"/>
+	
+	<LinearLayout
+	    android:id="@+id/layout_cache"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="15dp"
+	    android:paddingRight="10dp">
+	    <TextView 
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="清除缓存"
+	        android:textColor="@color/color_54413e"
+	        android:textSize="16sp"/>
+	    <TextView 
+	        android:id="@+id/cacheCount"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/color_54413e"
+	        android:textSize="16sp"/>
+	</LinearLayout>
+	
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+	    <Button      
+	        android:id="@+id/appExit"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/app_exit"
+	        android:layout_alignParentBottom="true"/>
+	</RelativeLayout>
+</LinearLayout>

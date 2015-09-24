@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_comment_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <com.www.goumei.views.CircleImageView
+            android:id="@+id/fansIcon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/test" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/isfollow"
+            android:layout_toRightOf="@+id/fansIcon"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/fansName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="别来无恙"
+                    android:textColor="@color/color_210303"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fansSex"
+                    android:layout_width="fill_parent"
+                    android:gravity="right"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <com.www.goumei.emoji.EmoticonsTextView
+                android:id="@+id/fansId"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fansName"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/fansIcon"
+                android:textColor="@color/color_705e5e"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/isfollow"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/test" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_comment_op"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/rl_reply"
+            style="@style/CommentDividerTextView" >
+
+            <TextView
+                android:id="@+id/tv_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_comment_reply"
+                android:text="回复"
+                android:textColor="@color/color_210303" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/divider_vertical_me" />
+
+        <RelativeLayout
+            android:id="@+id/rl_detail"
+            style="@style/CommentDividerTextView" >
+
+            <TextView
+                android:id="@+id/tv_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ico_comment_detail"
+                android:text="详情"
+                android:textColor="@color/color_210303" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/divider_vertical_me" />
+
+        <RelativeLayout
+            android:id="@+id/rl_delete"
+            style="@style/CommentDividerTextView" >
+
+            <TextView
+                android:id="@+id/tv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_comment_delelte"
+                android:text="删除"
+                android:textColor="@color/color_210303" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/fans_item_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@color/color_dcd7d4" />
+
+</LinearLayout>

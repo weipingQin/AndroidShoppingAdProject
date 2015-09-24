@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="top_indicator">
+        <item>热门</item>
+        <item>发现</item>
+        <item>买手圈</item>
+        <item>分类</item>
+    </string-array>
+    <string-array name="bottom_indicator">
+        <item>关注</item>
+        <item>首页</item>
+        <item>信息</item>
+        <item>我</item>
+    </string-array>
+    <string-array name="record_filter">
+        <item>原始</item>
+        <item>黑白</item>
+        <item>锐化</item>
+        <item>老照片</item>
+        <item>霓虹灯</item>
+        <item>反色</item>
+        <item>穿越</item>
+        <item>马赛克</item>
+        <item>怀旧</item>
+    </string-array>
+
+    <!-- 滤镜 -->
+    <string-array name="theme_filter_order">
+        <item>Empty</item>
+        <item>7AM</item>
+        <item>1974</item>
+        <item>Absinth</item>
+        <item>Stark</item>
+        <item>Papilio</item>
+        <item>Ice</item>
+        <item>Professional</item>
+        <item>Smoky</item>
+        <item>Stage</item>
+    </string-array>
+    <!-- 主题 -->
+    <string-array name="theme_order">
+        <item>Shining</item>
+        <item>Dreamworld</item>
+        <item>Love</item>
+        <item>Fashion</item>
+        <item>SunShine</item>
+        <item>Magic</item>
+        <item>Hawaii</item>
+        <item>Pulse</item>
+    </string-array>
+
+</resources>

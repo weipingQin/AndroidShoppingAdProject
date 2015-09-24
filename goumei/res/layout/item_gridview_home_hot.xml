@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item_gridview_home_hot"
+    android:layout_width="170dp"
+    android:layout_height="210dp" 
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/iv_graph"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/test" />
+
+    <com.www.goumei.emoji.EmoticonsTextView
+        android:id="@+id/tv_desc"
+        android:layout_width="fill_parent"
+        android:paddingLeft="1dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/iv_graph"
+        android:layout_toRightOf="@+id/iv_brand"
+        android:background="@android:color/white"
+        android:gravity="center|left"
+        android:singleLine="true"
+        android:text="描述"
+        android:textColor="@color/dark_red"
+        android:textSize="14sp" />
+
+    <RadioButton
+        android:id="@+id/rb_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_rate_favrioute_long"
+        android:button="@null"
+        android:drawableLeft="@drawable/icon_display_favrioute"
+        android:gravity="center"
+        android:enabled="false"
+        android:padding="3dp"
+        android:text="1604"
+        android:textColor="@android:color/white"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/iv_verified"
+        android:layout_toRightOf="@+id/iv_brand"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-12dp"
+        android:layout_marginBottom="-17dp"
+        android:visibility="invisible"
+        android:src="@drawable/icon_verified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.www.goumei.views.CircleImageView
+        android:id="@+id/iv_brand"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/test" />
+
+</RelativeLayout>

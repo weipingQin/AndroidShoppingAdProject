@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/color_eae8e6">
+    
+    <include layout="@layout/layout_titlebar_go_back" />
+
+    <LinearLayout
+        android:id="@+id/layout_ave_processed_pictures"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/string_save_processed_pictures"
+            android:textColor="@color/color_877c78"
+            android:textSize="16sp" />
+        
+        <ImageView
+            android:id="@+id/save_processed_picturesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_btn_on"/>
+    </LinearLayout>
+    
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/divider_message_title" />
+    
+    <LinearLayout
+        android:id="@+id/layout_wifi_play"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/string_wifi_play"
+            android:textColor="@color/color_877c78"
+            android:textSize="16sp" />
+        
+        <ImageView
+            android:id="@+id/wifi_playBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_btn_on"/>
+    </LinearLayout>
+</LinearLayout>

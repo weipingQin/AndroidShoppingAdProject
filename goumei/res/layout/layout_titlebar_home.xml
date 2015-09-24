@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/bg_status_bar_category" >
+
+    <RadioGroup
+        android:id="@+id/rb_group_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="60dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_buycirlce"
+            style="@style/TopIndicatorItem"
+            android:text="试衣间" />
+
+        <RadioButton
+            android:id="@+id/rb_discover"
+            style="@style/TopIndicatorItem"
+            android:text="主题" />
+
+        <RadioButton
+            android:id="@+id/rb_hot"
+            style="@style/TopIndicatorItem"
+            android:text="买" />
+
+        <RadioButton
+            android:id="@+id/rb_category"
+            style="@style/TopIndicatorItem"
+            android:text="分类" />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/ib_search"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/icon_indicator_search" />
+
+</RelativeLayout>

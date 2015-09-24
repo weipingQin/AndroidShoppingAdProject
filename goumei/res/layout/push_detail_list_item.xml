@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:padding="5dp">
+    	<TextView 
+    	    android:gravity="center"
+    	    android:id="@+id/isfollow"
+    	    android:padding="5dp"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:background="@drawable/bg_push_time"
+    	    android:textColor="@color/color_210303"
+    	    android:text="06-24 09:00"/>
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:padding="5dp">
+	    
+	    <com.www.goumei.views.CircleImageView
+	        android:id="@+id/fansIcon" 
+	        android:layout_width="35dp"
+	        android:layout_height="35dp"
+	        android:src="@drawable/test"/>
+	    
+	   <LinearLayout 
+	       android:id="@+id/ll"
+	       android:layout_toRightOf="@+id/fansIcon"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:layout_marginLeft="5dp"
+	       android:layout_marginRight="10dp"
+	       android:background="@drawable/bg_push_detail"
+	       android:orientation="vertical">
+	       <TextView 
+	           android:id="@+id/tv_content"
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content"
+	           android:textColor="@color/color_210303"/>
+	       <ImageView 
+	           android:id="@+id/iv_content"
+	           android:layout_width="45dp"
+	           android:layout_height="45dp"/>
+	       <TextView 
+	           android:gravity="right"
+	           android:layout_width="fill_parent"
+	           android:layout_height="wrap_content"
+	           android:textColor="@color/color_210303"
+	           android:text="点击查看"
+	           android:drawableRight="@drawable/push_right"/>
+	   </LinearLayout>
+	    
+	   
+	</RelativeLayout>
+	
+	<ImageView
+	    android:id="@+id/fans_item_line"
+	    android:visibility="gone"
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="@color/color_dcd7d4"
+	    android:layout_marginLeft="6dp"
+	    android:layout_marginRight="6dp"/>
+</LinearLayout>

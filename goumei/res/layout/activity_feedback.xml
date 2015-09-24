@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_eae8e6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_status_bar_category"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/feedback_last"
+            style="@style/MeItemTextView1"
+            android:layout_centerVertical="true"
+            android:text="@string/string_return" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/string_feedback"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/feedback_sendOut"
+            style="@style/MeItemTextView1"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/string_send_out" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        
+        android:orientation="vertical" >
+
+        <EditText
+            android:gravity="left|top"
+            android:id="@+id/feedback_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/string_feedback_text"
+            android:background="@drawable/edit_backgoud1"
+            android:padding="5dp"
+            android:textSize="13sp"
+            android:paddingLeft="5dp"/>
+    </LinearLayout>
+
+	<EditText
+            android:id="@+id/feedback_contact_information"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/string_feedback_text2"
+            android:background="@drawable/edit_backgoud2"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="8dp"/>    
+</LinearLayout>

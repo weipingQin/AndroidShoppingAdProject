@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_eae8e6"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="114dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <com.www.goumei.views.RoundImageView
+                    android:id="@+id/goddessSeason"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/icon_new" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_discover2"
+                android:layout_width="fill_parent"
+                android:layout_height="190dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <com.www.goumei.views.RoundImageView
+                    android:id="@+id/ParisFashionWeek"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <com.www.goumei.views.RoundImageView
+                        android:id="@+id/FoodMuseum"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"/>
+
+                    <com.www.goumei.views.RoundImageView
+                        android:id="@+id/Makeup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_discover3"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal" >
+
+                <com.www.goumei.views.RoundImageView
+                    android:id="@+id/HappyPregnantMother"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="5"
+                    android:scaleType="centerCrop"/>
+
+                <com.www.goumei.views.RoundImageView
+                    android:id="@+id/WarmManBaymax"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="3"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal" >
+
+                <com.www.goumei.views.RoundImageView
+                    android:id="@+id/ChildrensClothing"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"/>
+
+                <com.www.goumei.views.RoundImageView
+                    android:id="@+id/MengMengDa"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
